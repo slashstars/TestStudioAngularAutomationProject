@@ -351,7 +351,7 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "2a456fab-83e5-4862-9c67-090751bbf93a",
-            "Description": "Enter text 'My New Project' in 'NameText'",
+            "Description": "Enter text 'My New Project' in 'NameText' - DataDriven: [$(Project Name)]",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SetTextActionDescriptor",
@@ -457,7 +457,9 @@
                 "StepType": 4,
                 "LogMessageOnFailure": "",
                 "EditorType": "",
-                "DataBindingExpressions": {},
+                "DataBindingExpressions": {
+                  "Text": "$(Project Name)"
+                },
                 "_canEncrypt": false,
                 "_cipher": null
               }
@@ -1448,7 +1450,7 @@
                       "FindExpression": {
                         "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "+nJhSKmIeUtj7ZmGXibVAwCZi1E=",
+                          "uniqueKey": "So7ZBiGrmx1srCXQMySXXo7RvEE=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "ProjectUpdateSuccessMessage",
@@ -1468,7 +1470,7 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "TextContent=^[X]A project with "
+                                        "Clause": "TextContent=^A project with "
                                       }
                                     },
                                     {
@@ -1535,14 +1537,14 @@
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
       "__value": {
         "ConnectionString": "",
-        "DefaultToGrid": true,
+        "DefaultToGrid": false,
         "DataRange": "",
         "LoadRecordsCount": null,
         "DataTableName": "",
-        "DataProvider": "",
+        "DataProvider": "ProjectData.csv",
         "DataEnabled": true,
         "HasBuiltinGrid": false,
-        "DataType": 4,
+        "DataType": 1,
         "BuiltInData": null,
         "BuiltInDocumentKey": null,
         "TSQL": ""
@@ -1552,7 +1554,7 @@
     "DeploymentItems": [],
     "IsTestFragment": false,
     "StopTestListOnFailure": false,
-    "InheritParentDataSource": false,
+    "InheritParentDataSource": true,
     "BrowserType": 0,
     "QcId": 0,
     "QcFilePath": null,

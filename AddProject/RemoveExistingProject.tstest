@@ -59,117 +59,6 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "b502ac06-24bd-4961-87f8-b0b6380d253b",
-            "Description": "Wait for Exists 'TableRow'",
-            "CustomDescription": null,
-            "Step": {
-              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExistsVerificationDescriptor",
-              "__value": {
-                "ExistsNot": false,
-                "WaitOnElements": true,
-                "WaitOnElementsTimeout": 30000,
-                "UseStepWaitOnElementsTimout": false,
-                "DataBindVariableName": null,
-                "Timeout": 30000,
-                "CheckInterval": 500,
-                "EnsureStateIsCurrent": false,
-                "Pause": 0,
-                "RunsAgainstVersion": "",
-                "Constraints": {
-                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
-                  "__value": {
-                    "ConstraintValues": {
-                      "RunsAgainstVersion": ""
-                    }
-                  }
-                },
-                "Elements": {
-                  "target": {
-                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
-                    "__value": {
-                      "Name": "target",
-                      "Region": null,
-                      "Page": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
-                        "__value": {
-                          "Path": "/admin/projects",
-                          "Query": "",
-                          "BaseUrl": "http://localhost:3000",
-                          "EquivalentUrls": [],
-                          "Fragment": "",
-                          "Title": "",
-                          "CompareMode": 4,
-                          "AlwaysUseTitleInCompare": false,
-                          "FriendlyName": "admin_projects"
-                        }
-                      },
-                      "Frame": null,
-                      "FindInfo": null,
-                      "FindExpression": {
-                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
-                        "__value": {
-                          "uniqueKey": "zhAxdcyOsxKK+g/zZ0pExybmKTM=",
-                          "NodeKind": 4,
-                          "TechnologyType": 1,
-                          "Name": "TableRow",
-                          "FindExpressions": [
-                            {
-                              "Key": 1,
-                              "Value": {
-                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
-                                "__value": {
-                                  "Clauses": [
-                                    {
-                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
-                                      "__value": {
-                                        "Clause": "tagname=tr"
-                                      }
-                                    },
-                                    {
-                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
-                                      "__value": {
-                                        "Clause": "innertext=~My New Project"
-                                      }
-                                    }
-                                  ],
-                                  "Constraints": [],
-                                  "ChainStops": []
-                                }
-                              }
-                            }
-                          ],
-                          "BackupSearchClause": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[5]",
-                          "DataBindingExpressions": {}
-                        }
-                      },
-                      "HtmlControlType": "ArtOfTest.WebAii.Controls.HtmlControls.HtmlTableRow",
-                      "IsIndependent": false,
-                      "DomStateKey": "",
-                      "TechnologyType": 1,
-                      "Version": 200
-                    }
-                  }
-                },
-                "StepType": 1,
-                "LogMessageOnFailure": "",
-                "EditorType": "",
-                "DataBindingExpressions": {}
-              }
-            },
-            "Enabled": true,
-            "Order": 2,
-            "Id": "",
-            "StepState": 0,
-            "ContinueOnFailure": false,
-            "StepImageKey": "AddProjectshigiree.xgh",
-            "QcId": 0,
-            "QcVersionStamp": 0,
-            "Version": 200
-          }
-        },
-        {
-          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
-          "__value": {
             "Runtime ID": "6d21ef97-d769-46c6-9242-e9661cf513a5",
             "Description": "Click 'MyNewProjectTableCell'",
             "CustomDescription": null,
@@ -217,9 +106,9 @@
                       "Frame": null,
                       "FindInfo": null,
                       "FindExpression": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "XahclXOvAHvipx4nvlka9tx3VDs=",
+                          "uniqueKey": "DwSdBOZqo1HXsY8NgNdvjxZacRQ=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "MyNewProjectTableCell",
@@ -233,13 +122,13 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "TextContent=My New Project"
+                                        "Clause": "tagname=td"
                                       }
                                     },
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "tagname=td"
+                                        "Clause": "TextContent=$(Project Name)"
                                       }
                                     }
                                   ],
@@ -250,7 +139,9 @@
                             }
                           ],
                           "BackupSearchClause": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[1]/td[1]",
-                          "DataBindingExpressions": {}
+                          "DataBindingExpressions": {
+                            "Expression": "tagname=td,TextContent=$(Project Name)"
+                          }
                         }
                       },
                       "HtmlControlType": "ArtOfTest.WebAii.Controls.HtmlControls.HtmlTableCell",
@@ -268,7 +159,7 @@
               }
             },
             "Enabled": true,
-            "Order": 3,
+            "Order": 2,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -381,7 +272,7 @@
               }
             },
             "Enabled": true,
-            "Order": 4,
+            "Order": 3,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -443,7 +334,7 @@
                       "FindExpression": {
                         "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "+nJhSKmIeUtj7ZmGXibVAwCZi1E=",
+                          "uniqueKey": "So7ZBiGrmx1srCXQMySXXo7RvEE=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "ProjectUpdateSuccessMessage",
@@ -463,7 +354,7 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "TextContent=^[X]A project with "
+                                        "Clause": "TextContent=^A project with "
                                       }
                                     },
                                     {
@@ -498,7 +389,7 @@
               }
             },
             "Enabled": true,
-            "Order": 5,
+            "Order": 4,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -530,14 +421,14 @@
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
       "__value": {
         "ConnectionString": "",
-        "DefaultToGrid": true,
+        "DefaultToGrid": false,
         "DataRange": "",
         "LoadRecordsCount": null,
         "DataTableName": "",
-        "DataProvider": "",
+        "DataProvider": "ProjectData.csv",
         "DataEnabled": true,
         "HasBuiltinGrid": false,
-        "DataType": 4,
+        "DataType": 1,
         "BuiltInData": null,
         "BuiltInDocumentKey": null,
         "TSQL": ""
@@ -547,7 +438,7 @@
     "DeploymentItems": [],
     "IsTestFragment": false,
     "StopTestListOnFailure": false,
-    "InheritParentDataSource": false,
+    "InheritParentDataSource": true,
     "BrowserType": 0,
     "QcId": 0,
     "QcFilePath": null,
