@@ -179,8 +179,20 @@
     "DefaultWPFApplication": null,
     "UseLegacySilverlightFindLogic": false,
     "ProjectGuid": "f772661a-4945-4885-82e8-8a40f24e9960",
-    "SourceControlRepository": null,
-    "IsOnline": false,
+    "SourceControlRepository": {
+      "__type": "Telerik.TestStudio.SourceControl.Git.TS.GitRepositoryInfo",
+      "__value": {
+        "RemotePath": "https://github.com/slashstars/TestStudioAngularAutomationProject.git",
+        "ServerInfo": {
+          "__type": "Telerik.TestStudio.SourceControl.Git.TS.GitServerInfo",
+          "__value": {
+            "ServerName": "https://github.com/slashstars/TestStudioAngularAutomationProject.git"
+          }
+        },
+        "ServerType": 2
+      }
+    },
+    "IsOnline": true,
     "ProjectLanguage": 2,
     "ProjectReferences": [
       "System",
@@ -194,7 +206,7 @@
     ],
     "ScheduleServerUrl": "http://localhost:8009",
     "IsScheduleServerRemote": false,
-    "ProjectVersion": "2016.1.321.0",
+    "ProjectVersion": "2016.2.610.0",
     "Namespace": "TestStudioAngularAutomationProject",
     "AssemblyName": "TestStudioAngularAutomationProject",
     "OutputFolder": "bin",
